@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
+interface Connection {
+  isConnected?: boolean;
+}
+
 const connection = {};
 
 async function connect() {
